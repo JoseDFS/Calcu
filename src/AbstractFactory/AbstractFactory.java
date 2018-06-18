@@ -5,10 +5,14 @@
  */
 package AbstractFactory;
 
+import FactoryBinario.Binario;
+import OperacionesAritmeticas.Operacion;
+
 /**
  *
  * @author LN710Q
  */
 public interface AbstractFactory {
-    Binario getBinario()
+    Binario getBinario();
+    Operacion getOperacion(int a);
 }

@@ -12,18 +12,26 @@ import FactoryBinario.Binario;
  * @author LN710Q
  */
 public class Conversion implements Binario{
+    
+    String resultado;
 
     @Override
     public String aBinario(int a) {
-        String convert = null;
-        String sCadenaInvertida = null;
-        while(a>=2){
-            convert += a%2;
+        String b = ""; // binary representation as a string
+        while (a != 0) {
+            int r = (int)(a % 2); // remainder
+            b = r + b; // concatenate remainder
+            a /= 2; // reduce a
         }
-        for (int x=convert.length()-1;x>=0;x--)
-		sCadenaInvertida = sCadenaInvertida + convert.charAt(x);
-        
-        return sCadenaInvertida;
+        this.resultado = b;
+        return b;
     }
+
+    @Override
+    public String getResultado() {
+        return resultado;
+    }
+    
+    
     
 }

@@ -1,5 +1,4 @@
-
-import OperacionesAritmeticas.Operacion;
+package OperacionesAritmeticas;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -14,7 +13,7 @@ import OperacionesAritmeticas.Operacion;
  */
 public class Multiplicacion implements Operacion{
     @Override
-    public int Calcular(int a, int b) {
+    public float Calcular(int a, int b) {
         return a*b;
     }
     

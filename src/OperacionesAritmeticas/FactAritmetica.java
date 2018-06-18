@@ -6,7 +6,7 @@
 package OperacionesAritmeticas;
 
 import AbstractFactory.AbstractFactory;
-import OperacionesAritmeticas.Operacion;
+import FactoryBinario.Binario;
 
 
 
@@ -15,7 +15,9 @@ import OperacionesAritmeticas.Operacion;
  * @author LN710Q
  */
 public class FactAritmetica implements AbstractFactory{
-    public Operacion CrearAritmetica(int a){
+    
+    @Override
+    public Operacion getOperacion( int a){
         switch(a){
             case 1:
                 Operacion suma = new Suma();
@@ -38,4 +40,6 @@ public class FactAritmetica implements AbstractFactory{
     public Binario getBinario() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
+    
 }

@@ -7,20 +7,26 @@ package FactoryBinario;
 
 import AbstractFactory.AbstractFactory;
 import Binario.Conversion;
+import OperacionesAritmeticas.Operacion;
 
 /**
  *
  * @author LN710Q
  */
 public class FactBinario implements AbstractFactory {
-    public  Binario CrearBinario(int a){
-        Binario binario = new Conversion();
-        return binario;
-    }
+   
 
     @Override
     public Binario getBinario() {
-        return null;
+        
+        return new Conversion();
+    }
+
+  
+
+    @Override
+    public Operacion getOperacion(int a) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }

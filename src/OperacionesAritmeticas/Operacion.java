@@ -10,6 +10,6 @@ package OperacionesAritmeticas;
  * @author LN710Q
  */
 public interface Operacion {
-    public int Calcular(int a ,int b);
+    public float Calcular(int a ,int b);
 
 }

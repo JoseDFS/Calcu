@@ -11,4 +11,5 @@ package FactoryBinario;
  */
 public interface Binario {
     public String aBinario(int a);
+    public String getResultado();
 }
